@@ -14,7 +14,7 @@
             android:orientation="vertical">
 
 
-            <VideoView
+            <ImageView
                 android:id="@+id/videoView4"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -24,7 +24,7 @@
                 android:layout_margin="10dp"
                 />
 
-            <VideoView
+            <ImageView
                 android:id="@+id/videoView3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -34,7 +34,7 @@
                 android:layout_margin="10dp"
                 />
 
-            <VideoView
+            <ImageView
                 android:id="@+id/videoView2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -44,7 +44,7 @@
                 />
 
 
-            <VideoView
+            <ImageView
                 android:id="@+id/videoView5"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
