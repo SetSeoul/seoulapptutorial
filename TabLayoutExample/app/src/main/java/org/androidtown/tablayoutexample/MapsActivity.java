@@ -40,12 +40,32 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        // mMap 객체 생성
 
+        double latitude = 37.507630;
+        double longitude = 127.026648;
+
+        // Add a marker in Sydney and move the camera
+        LatLng seoul = new LatLng(latitude, longitude);
 
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        // sydney 객체명으로 ("Marker in sydney") title 을 붙여 마커를 추가
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        // camera 위치를 sydeney 객체 위치로 이동
+
+        // mMap.addMarker(new MarkerOptions().position(seoul).title("Marker in seoul"));
+        // sydney 객체명으로 ("Marker in seoul") title 을 붙여 마커를 추가
+        // mMap.moveCamera(CameraUpdateFactory.newLatLng(seoul));
+        // camera 위치를 seoul 객체 위치로 이동
+        mMap.addMarker(new MarkerOptions().position(seoul).title("카페베네 신논현점"));
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(seoul));
+        // camera 위치를 seoul
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(16));
+        // 지도를 레벨 확대 레벨16으로 출력
+
     }
 
 
