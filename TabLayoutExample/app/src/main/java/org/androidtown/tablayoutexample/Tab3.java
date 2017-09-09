@@ -12,7 +12,7 @@ import android.view.ViewGroup;
  */
 
 public class Tab3 extends Fragment{
-
+    //sadas
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
