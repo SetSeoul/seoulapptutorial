@@ -1,4 +1,5 @@
 package org.androidtown.tablayoutexample;
+
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -82,10 +83,13 @@ public class MainNavigat extends AppCompatActivity
 
         FragmentManager manager = getFragmentManager();
 
-        if (id == R.id.nav_second_layout) {
-            manager.beginTransaction().replace(R.id.content_main_navigat, new FirstLayout()).commit();
-        } else if (id == R.id.nav_second_layout) {
-            manager.beginTransaction().replace(R.id.content_main_navigat, new SecondLayout()).commit();
+        if (id == R.id.nav_nav_1) {
+            manager . beginTransaction() . replace(R.id.content_main_navigat , new Nav_1()) . commit();
+        } else if (id == R.id.nav_nav_2) {
+            manager . beginTransaction() . replace(R.id.content_main_navigat , new Nav_2()) . commit();
+
+
+
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
